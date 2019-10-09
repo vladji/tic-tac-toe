@@ -18,7 +18,10 @@ class TicTacToe {
 	}
 
 	isFinished() {
-
+		const winner = this.getWinner();
+		const fullField = this.noMoreTurns();
+		if (winner || fullField) return true;
+		return false;
 	}
 
 	getWinner() {

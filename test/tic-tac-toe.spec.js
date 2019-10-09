@@ -2828,7 +2828,7 @@ describe('TicTacToe', () => {
         });
     });
     describe('#isFinished', () => {
-        it('should return winner of the game or null', () => {
+        it.only('should return winner of the game or null', () => {
             let game;
 
             game = new TicTacToe();
@@ -3405,7 +3405,7 @@ describe('TicTacToe', () => {
         });
     });
     describe('#nextTurn', () => {
-        it('should update game state correctly', () => {
+        it.only('should update game state correctly', () => {
             let game;
 
             game = new TicTacToe();
