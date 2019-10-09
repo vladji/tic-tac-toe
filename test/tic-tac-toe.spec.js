@@ -2,7 +2,7 @@ const TicTacToe = require('../src/tic-tac-toe.js');
 
 describe('TicTacToe', () => {
     describe('#getCurrentPlayerSymbol', () => {
-        it('should return correct player symbol', () => {
+        it.only('should return correct player symbol', () => {
             let game;
 
             game = new TicTacToe();
@@ -568,7 +568,7 @@ describe('TicTacToe', () => {
         });
     });
     describe('#getFieldValue', () => {
-        it('should return correct field value', () => {
+        it.only('should return correct field value', () => {
             let game;
 
             game = new TicTacToe();
@@ -1181,7 +1181,7 @@ describe('TicTacToe', () => {
         });
     });
     describe('#isDraw', () => {
-        it('should return false if game is not finished or there is a winner, and true if it is a draw', () => {
+        it.only('should return false if game is not finished or there is a winner, and true if it is a draw', () => {
             let game;
 
             game = new TicTacToe();
@@ -1659,7 +1659,7 @@ describe('TicTacToe', () => {
         });
     });
     describe('#noMoreTurns', () => {
-        it('should true if game field is full and false otherwise', () => {
+        it.only('should true if game field is full and false otherwise', () => {
             let game;
 
             game = new TicTacToe();
@@ -2197,7 +2197,7 @@ describe('TicTacToe', () => {
         });
     });
     describe('#getWinner', () => {
-        it('should return winner of the game or null', () => {
+        it.only('should return winner of the game or null', () => {
             let game;
 
             game = new TicTacToe();
